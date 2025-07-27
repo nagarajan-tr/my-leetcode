@@ -1,6 +1,6 @@
 // 268. Missing Number
 
-var MisingNumber = function(nums){
+function missingNumber(nums) {
     let n = nums.length;
 
     // way 1
@@ -19,4 +19,18 @@ var MisingNumber = function(nums){
     // return ans;
 }
 
-console.log(MisingNumber([4,6,3,7,5,0,1])); // Expected output: 2
+let result = missingNumber([3, 0, 1]);
+
+window.onload = function () {
+    let output = document.createElement('div');
+    output.innerText = "Missing Number: " + result;
+    output.style.fontSize = "24px";
+    output.style.color = "#fff";
+    output.style.background = "linear-gradient(to right, #00c6ff, #0072ff)";
+    output.style.padding = "20px";
+    output.style.margin = "20px";
+    output.style.borderRadius = "10px";
+    output.style.width = "fit-content";
+    output.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
+    document.body.appendChild(output);
+}
